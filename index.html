@@ -7,6 +7,8 @@
     <title>My Portfolio | Fahri Rahman</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -42,7 +44,7 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-        <img src="img/fahri.jpg" alt="Fahri Rahman" width="150px" class="rounded-circle img-thumbnail">
+        <img src="img/fahri.jpg" alt="Fahri Rahman" width="150px" class="rounded-circle img-thumbnail" />
         <h1 class="display-4">Fahri Rahman</h1>
         <p class="lead">Fresh Graduate | Web Developer</p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -55,14 +57,14 @@
 
     <!-- About -->
     <section id="about">
-        <div class="container">
+        <div class="container" data-aos="fade-down" data-aos-offset="300">
             <div class="row text-center mb-3">
                 <div class="col">
                     <h2>About Me</h2>
                 </div>
             </div>
             <div class="row justify-content-center fs-5 text-center">
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
                     <p>My name is Fahri Rahman, an individual who has experience as a Cashier Staff at PT. Dinamika
                         Mitra Pratama. In that role, I am accustomed to working with high accuracy, speed, and integrity
                         in handling transactions and customer service. I also have an interest and ability in
@@ -82,7 +84,7 @@
 
     <!-- Skill -->
     <section id="skills">
-        <div class="container">
+        <div class="container" data-aos="fade-down">
             <div class="row text-center mb-3">
                 <div class="col">
                     <h2>My Skills</h2>
@@ -90,7 +92,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
                         <img src="skills/1.jpg" class="card-img-top" alt="Skills 1">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -99,7 +101,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
                         <img src="skills/1.jpg" class="card-img-top" alt="Skills 1">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -108,7 +110,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="800">
                         <img src="skills/1.jpg" class="card-img-top" alt="Skills 1">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -128,7 +130,7 @@
 
     <!-- Contact -->
     <section id="contact">
-        <div class="container">
+        <div class="container" data-aos="fade-down" data-aos-offset="300" data-aos-duration="1500">
             <div class="row text-center mb-3">
                 <div class="col">
                     <h2>Contact Me</h2>
@@ -176,9 +178,17 @@
         <p>Created By <a href="https://github.com/fahrirhmnnnn/" class="text-white fw-bold"> Fahri Rahman</a></p>
     </footer>
     <!-- Akhir Footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxSMUqRIsv4So8hf1cWBtajjfitQe8oHqAgThTwvhVhkBW6TSZNWk5FvlHwc2byNQ/exec'
